@@ -12,5 +12,13 @@ const firebaseConfig = {
 };
 
 export const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 
+async function initAnalytics() {
+  if (await isSupported()) {
+    const analytics = getAnalytics(app);
+    return analytics;
+  }
+  console.log("Firebase Analytics is not supported in this environment.");
+}
+
+initAnalytics();

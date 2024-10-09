@@ -10,7 +10,7 @@ const handler = NextAuth({
   ],
   callbacks: {
     async redirect() {
-      return "/";
+      return "/https://vercel.com/5umit1711s-projects/toggle-drive-5b1i";
     },
   },
 });

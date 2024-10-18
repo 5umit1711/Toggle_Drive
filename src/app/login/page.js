@@ -19,7 +19,7 @@ const Login = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100">
+    <div className="ml-28 flex justify-center items-center min-h-screen bg-green-100">
       <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg">
         <Image src="/uploadIcon.png" width={80} height={30} alt="Icon" className="mb-4" />
         <h1 className="text-lg font-semibold text-gray-800 mb-4">Login to Your Account</h1>
